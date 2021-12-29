@@ -175,6 +175,102 @@ default :
     print("예외")
 }
 
+/*
+ swift 반복문 for-in while, repeat-while
+ */
+
+/*
+ for 루프상수 in 순회대상 {
+    // 실행구문
+ }
+ */
+
+for i in 1...4{
+    print(i)
+}
+
+let array = [1,2,3,4,5]
+
+for i in array{
+    print(i)
+}
+
+/*
+ while 조건식 { // while 문은 조건이 만족하는 동안 계속 실행
+    실핼할 구문
+ }
+ */
+
+var number = 5
+
+while number < 10 {
+    number+=1
+}
+
+number // 10
+
+/*
+ repeat-while -> java 의 do-while : 적어도 반드시 한번은 구문을 실행
+ repeat {
+    // 실행 할 구문
+ } while 조건식
+*/
+
+var x = 6
+
+repeat{
+    x+=2
+} while x < 5
+
+print(x) // while 조건은 맞지 않지만 repeat 으로 인해 반드시 실행이 되므로 8이 출력된다.
+
+/*
+ 옵셔널(optional) 있을수도 없을수도 있다. nil = null
+*/
+
+var name : String? = nil // nil
+var name2 : String? // 옵셔널의 경우 초기값이 nil로 지정 된다.
+
+/*
+ optional 해제 방법 : 명시적 해제 / 묵시적 해제
+ 명시적 해제 : 강제 해제 / 비강제 해제(옵셔널 바인딩)
+ 묵시적 해제 : 컴파일러에 의한 자동 해제 옵셔널의 묵시적 해제
+ */
+
+var optionalNumber : Int? = 3
+print(optionalNumber) // optional(3)
+print(optionalNumber!) // 3 ! -> 값이 있다는 보증(코틀린의 !!) -> 강제로 옵셔널을 해제 하는 것이기 떄문에 위험 할 수 있음.
+
+// 안전하게 옵셔널을 해제해주는 비강제 해제 옵셔널 바인딩
+
+if let result = optionalNumber {
+    print(result) // 3
+}else{
+    
+}
+
+func optionaltest(){
+    let number : Int? = 5
+    guard let result = number else {return}
+    print(result)
+}
+
+// if 문으로 옵셔널을 추출 할 경우 if문 안에서만 사용 할 수 있지만, guard 문으로 추출 할 경우 gruard 문으로 추출한 함수 내에서 사용 가능. 가드문은 조건이 트루 일떄만 가드문을 통과하고, false 일경우 else 문을 수행한 뒤 흐름을 종료시킴.
+optionaltest()
+
+
+let value : Int? = 6
+
+if value == 6 {
+    print(value, "묵시적 해제")
+}else {
+    print(value, "실패")
+}
+
+// 묵시적 해제
+let string = "12"
+var stringToInt : Int! = Int(string) // !
+print(stringToInt+1)
 
 
 
