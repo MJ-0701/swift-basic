@@ -1,6 +1,6 @@
 import Foundation
 
-// 열거형 : 연관된 값들의 모임.
+// 열거형 : 연관된 값들의 모임. -> 자바 Enum
 
 //enum CompassPoint {
 //    case north
