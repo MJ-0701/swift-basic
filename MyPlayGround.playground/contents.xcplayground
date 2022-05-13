@@ -15,5 +15,7 @@
         <page name='22-Enum'/>
         <page name='23-OptionalChaining'/>
         <page name='24-Try-Catch'/>
+        <page name='25-Closure'/>
+        <page name='26-Function'/>
     </pages>
 </playground>
