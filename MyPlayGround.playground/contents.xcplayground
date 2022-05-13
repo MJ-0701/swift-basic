@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
-        <page name='Untitled Page 3'/>
-        <page name='Untitled Page 4'/>
-        <page name='Untitled Page 5'/>
-        <page name='Untitled Page 6'/>
-        <page name='Untitled Page 7'/>
-        <page name='Untitled Page 8'/>
         <page name='01~11-SwiftBasic'/>
         <page name='12-Struct'/>
         <page name='13-Class'/>
         <page name='14-Init'/>
         <page name='15-Property'/>
         <page name='16-ClassStructDiff'/>
-        <page name='17-SwiftClass'/>
+        <page name='17-Inheritance'/>
+        <page name='18-TypeCasting'/>
+        <page name='19-AssertAndGuard'/>
+        <page name='20-Protocol'/>
+        <page name='21-Extension'/>
+        <page name='22-Enum'/>
         <page name='23-OptionalChaining'/>
+        <page name='24-Try-Catch'/>
     </pages>
 </playground>
